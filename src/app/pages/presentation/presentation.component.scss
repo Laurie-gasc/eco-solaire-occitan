@@ -1,0 +1,18 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: #0a5508;
+  font-weight: bold;
+  margin: 2rem 0; // espace au-dessus et en-dessous
+
+  &::before,
+  &::after {
+    content: "";
+    flex: content;        
+    height: 2px;        // épaisseur de la ligne
+    background-color: #0a5508;
+    margin: 0 2rem;     // espace entre le texte et les lignes
+  }
+}

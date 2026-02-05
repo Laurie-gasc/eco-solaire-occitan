@@ -7,6 +7,7 @@ import { ServicesComponent } from "./pages/services/services.component";
 import { AvisComponent } from "./pages/avis/avis.component";
 import { ContactComponent } from "./pages/contact/contact.component";
 import { RealisationsComponent } from "./pages/realisations/realisations.component";
+import { PresentationComponent } from "./pages/presentation/presentation.component";
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,8 @@ import { RealisationsComponent } from "./pages/realisations/realisations.compone
     ServicesComponent,
     AvisComponent,
     ContactComponent,
-    RealisationsComponent
+    RealisationsComponent,
+    PresentationComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

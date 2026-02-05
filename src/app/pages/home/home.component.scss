@@ -1,12 +1,32 @@
 .home {
   padding: 2rem;
+}
 
-  h1 {
-    color: #0a5508;
+.title-wrapper {
+  overflow: hidden;
+}
+
+h1 {
+  color: #0a5508;
+  font-size: 5rem;
+  animation: slideInRight 0.8s ease-out forwards;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #222;
+  font-size: 2rem;
+  margin-top: auto;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
   }
 
-  p {
-    color: #222;
-    font-size: 1.2rem;
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

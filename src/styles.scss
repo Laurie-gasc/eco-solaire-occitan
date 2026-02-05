@@ -1,39 +1,38 @@
 /* --- Header --- */
 .header {
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #045026ca;
   color: white;
-  padding: 1rem 2rem; /* espace à gauche et droite */
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;   /* limite la largeur du contenu */
-  margin: 0 auto;      /* centre le tout horizontalement */
+  max-width: 1500px; /* limite la largeur du contenu */
+  margin: 0 auto; /* centre le tout horizontalement */
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  flex-shrink: 0;      /* évite que le logo rétrécisse */
+  flex-shrink: 0;
 }
 
 .logo {
-  max-height: 60px; /* ajuste selon ton logo */
+  max-height: 80px;
   width: auto;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;        /* espace entre les liens */
-  flex-wrap: wrap;     /* si l'écran est trop petit, les liens passent à la ligne */
+  gap: 1.5rem; /* espace entre les liens */
+  flex-wrap: wrap; /* si l'écran est trop petit, les liens passent à la ligne */
 }
 
 .nav-links a {
@@ -46,12 +45,31 @@
   color: #5bd757;
 }
 
-
 /* --- Sections --- */
 section {
-  min-height: 100vh;          /* chaque section prend tout l'écran */
-  padding: 120px 2rem 2rem;   /* padding-top = header fixe */
+  min-height: 100vh; /* chaque section prend tout l'écran */
+  padding: 120px 2rem 2rem; /* padding-top = header fixe */
 }
+
+.section-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: #0a5508;
+  font-weight: bold;
+  margin: 2rem 0; // espace au-dessus et en-dessous
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;        
+    height: 2px;        // épaisseur de la ligne
+    background-color: #0a5508;
+    margin: 0 2rem;     // espace entre le texte et les lignes
+  }
+}
+
 
 /* --- Footer --- */
 footer {
@@ -64,6 +82,19 @@ footer {
 /* --- Smooth Scroll --- */
 html {
   scroll-behavior: smooth;
+}
+
+.bebas-neue-regular {
+  font-weight: 400;
+}
+
+body {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100vh;
+  background: url("assets/background.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* --- Responsive --- */
