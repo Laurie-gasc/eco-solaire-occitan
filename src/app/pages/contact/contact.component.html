@@ -1,1 +1,26 @@
 <h2 class="section-title">CONTACT</h2>
+<section>
+  <div class="container px-5 mx-auto flex flex-wrap">
+    <form [formGroup]="form" (ngSubmit)="send()">
+      <h1>Contact</h1>
+      <div>
+        <label for="name" class="leading-7 text-sm text-gray-600">Nom</label>
+        <input formControlName="name" type="text" id="name" name="name" />
+      </div>
+      <div>
+        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+        <input formControlName="email" type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="message" class="leading-7 text-sm text-gray-600"
+          >Message</label>
+        <textarea
+          formControlName="message"
+          id="message"
+          name="message"
+        ></textarea>
+      </div>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</section>
