@@ -1,12 +1,14 @@
 .footer {
   padding: 1rem 2rem;
-  background-color: #045026ca;
+  background-color: #0450268a;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
+
+
 
 .social-links a {
   color: white;
@@ -15,7 +17,7 @@
 }
 
 .social-links a:hover {
-  color: #ffcc00;
+  color: #000000;
 }
 
 /* Responsive */

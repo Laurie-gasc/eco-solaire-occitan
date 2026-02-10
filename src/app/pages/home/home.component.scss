@@ -1,32 +1,28 @@
 .home {
-  padding: 2rem;
+                  
+  background-image: url("/assets/accueil.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding: 0;            
+  margin: 0;
 }
 
 .title-wrapper {
   overflow: hidden;
+  text-align: center;
+  padding-top: 120px; /* espace sous header fixe */
 }
 
 h1 {
-  color: #0a5508;
+  color: #ffffff;
   font-size: 5rem;
   animation: slideInRight 0.8s ease-out forwards;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem 0; /* juste un margin-bottom */
 }
 
 p {
-  color: #222;
+  color: #ffffff;
   font-size: 2rem;
-  margin-top: auto;
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+  margin: 0; /* pas de margin */
 }
