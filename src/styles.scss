@@ -1,9 +1,12 @@
 /* --- Sections --- */
 section {
-  min-height: 100vh; /* chaque section prend tout l'écran */
+  min-height: 50vh; /* chaque section prend tout l'écran */
   padding: 110px 0 0; /* padding-top = header fixe */
 }
 
+section.home {
+  padding-top: 0; /* supprime la bande inutile */
+}
 .section-title {
   display: flex;
   align-items: center;
@@ -11,7 +14,6 @@ section {
   font-size: 2rem;
   color: #0a5508;
   font-weight: bold;
-
 
   &::before,
   &::after {
@@ -55,7 +57,47 @@ body {
     margin-top: 0.5rem;
   }
 
+  
   .logo-container {
     margin-bottom: 0.5rem;
   }
+
+ 
+}
+
+.buttons {
+  position: relative;
+  padding: 14px 32px;
+  background: rgb(10, 102, 10);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+.buttons::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0e2d05b3;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+.buttons:hover::before,
+.buttons:focus-visible::before {
+  transform: scaleX(1);
+}
+.btn-fill-demo:hover,
+.btn-fill-demo:focus-visible {
+  color: white;
+}
+@media (prefers-reduced-motion: reduce) {
+  .buttons::before { transition-duration: 0.05s; }
 }
