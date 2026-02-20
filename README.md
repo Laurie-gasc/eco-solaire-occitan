@@ -1,59 +1,36 @@
-# EcoSolaireOccitan
+# Eco Solaire Occitan
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
+Site vitrine pour **Eco Solaire Occitan**, entreprise spécialisée dans l'installation de panneaux solaires et solutions d'énergie renouvelable en Occitanie (Toulouse et région).
 
-## Development server
+⚠️ **Projet en cours de développement** : certaines fonctionnalités (notamment le formulaire de contact et des optimisations visuelles) sont encore en cours d’implémentation.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## Fonctionnalités principales
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Présentation de l’entreprise et de ses services photovoltaïques
+- Sections : Accueil, Services, Réalisations, Avis clients et Contact
+- Navigation fluide avec *smooth scroll* et header fixe
+- Animation du menu avec slider actif
+- Boutons stylisés réutilisables sur tout le site
+- Design responsive (mobile / tablette / desktop)
+- Préparation d’un formulaire de contact avec envoi d’email
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Technologies utilisées
 
-```bash
-ng generate component component-name
-```
+- Angular 19
+- HTML5 / SCSS / CSS
+- Animations CSS
+- Responsive design
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## Installation du projet
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### 1. Cloner le dépôt
 
 ```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone https://github.com/ton-utilisateur/EcoSolaireOccitan.git
+cd EcoSolaireOccitan

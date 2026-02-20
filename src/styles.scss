@@ -1,11 +1,12 @@
 /* --- Sections --- */
+
 section {
-  min-height: 50vh; /* chaque section prend tout l'écran */
-  padding: 110px 0 0; /* padding-top = header fixe */
+  min-height: 50vh; 
+  padding: 110px 0 0; // padding en top pour un header fixe
 }
 
 section.home {
-  padding-top: 0; /* supprime la bande inutile */
+  padding-top: 0; // Supprime la bande qui est inutile dans home
 }
 .section-title {
   display: flex;
@@ -21,11 +22,12 @@ section.home {
     flex: 1;
     height: 2px; // épaisseur de la ligne
     background-color: #0a5508;
-    margin: 0 2rem; // espace entre le texte et les lignes
+    margin: 0 3rem; // espace entre le texte et les lignes
   }
 }
 
 /* --- Smooth Scroll --- */
+
 html {
   scroll-behavior: smooth;
 }
@@ -45,10 +47,11 @@ body {
 }
 
 /* --- Responsive --- */
+
 @media screen and (max-width: 768px) {
   .nav-container {
     flex-direction: column;
-    align-items: center; /* centre les éléments sur mobile */
+    align-items: center;
   }
 
   .nav-links {
@@ -64,6 +67,8 @@ body {
 
  
 }
+
+/* Les boutons */
 
 .buttons {
   position: relative;
