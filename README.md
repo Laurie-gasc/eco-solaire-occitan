@@ -32,5 +32,5 @@ Site vitrine pour **Eco Solaire Occitan**, entreprise spécialisée dans l'insta
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/ton-utilisateur/EcoSolaireOccitan.git
-cd EcoSolaireOccitan
+git clone https://github.com/L0wriie/eco-solaire-occitan.git
+cd eco-solaire-occitan
