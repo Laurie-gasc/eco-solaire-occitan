@@ -1,26 +1,109 @@
 <h2 class="section-title">CONTACT</h2>
-<section>
-  <div class="container px-5 mx-auto flex flex-wrap">
-    <form [formGroup]="form" (ngSubmit)="send()">
-      <h1>Contact</h1>
-      <div>
-        <label for="name" class="leading-7 text-sm text-gray-600">Nom</label>
-        <input formControlName="name" type="text" id="name" name="name" />
+
+<section class="home">
+  <div class="container mt-5 pb-5">
+    <div class="row g-4">
+      <!-- Colonne gauche : formulaire -->
+      <div class="col">
+        <div class="card shadow p-3 mb-5 rounded h-100">
+          <div class="card-body p-4">
+            <h4 class="card-title mb-4 fw-semibold">Formulaire</h4>
+
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+              <div class="mb-3 text-start">
+                <label for="name" class="form-label">Nom</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  formControlName="name"
+                  placeholder="Votre nom"
+                  [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
+                />
+                <div
+                  class="invalid-feedback"
+                  *ngIf="submitted && f['name'].errors?.['required']"
+                >
+                  Le nom est requis.
+                </div>
+              </div>
+
+              <div class="mb-3 text-start">
+                <label for="email" class="form-label">Adresse mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  formControlName="email"
+                  placeholder="exemple@mail.com"
+                  [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+                />
+                <div
+                  class="invalid-feedback"
+                  *ngIf="submitted && f['email'].errors?.['required']"
+                >
+                  L'adresse mail est requise.
+                </div>
+                <div
+                  class="invalid-feedback"
+                  *ngIf="submitted && f['email'].errors?.['email']"
+                >
+                  Format d'email invalide.
+                </div>
+              </div>
+
+              <div class="mb-4 text-start">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  formControlName="message"
+                  rows="4"
+                  placeholder="Votre message..."
+                  [ngClass]="{ 'is-invalid': submitted && f['message'].errors }"
+                ></textarea>
+                <div
+                  class="invalid-feedback"
+                  *ngIf="submitted && f['message'].errors?.['required']"
+                >
+                  Le message est requis.
+                </div>
+              </div>
+
+              <div>
+                <button type="submit" class="buttons">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <div>
-        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-        <input formControlName="email" type="email" id="email" name="email" />
+
+      <!-- Colonne droite : horaires et téléphones -->
+      <div class="col text-center">
+        <div class="card shadow-lg h-150">
+          <div class="card-body p-4">
+            <h4 class="card-title mb-4 fw-semibold">Informations</h4>
+
+            <h6 class="fw-semibold mb-4">Horaires</h6>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-1">Lundi – Vendredi : 9h00 – 18h00</li>
+              <li class="text-muted">Samedi : Fermé</li>
+              <li class="text-muted">Dimanche : Fermé</li>
+            </ul>
+
+            <h6 class="fw-semibold mb-4">Téléphone</h6>
+            <ul class="list-unstyled">
+              <li class="mb-4">
+                Rémi Cattiau :<i class="bi bi-telephone me-2"></i>06 75 13 04 44
+              </li>
+              <li>
+                Xavier Fernandez :<i class="bi bi-telephone me-2"></i>06 88 93
+                11 77
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div>
-        <label for="message" class="leading-7 text-sm text-gray-600"
-          >Message</label>
-        <textarea
-          formControlName="message"
-          id="message"
-          name="message"
-        ></textarea>
-      </div>
-      <button type="submit">Envoyer</button>
-    </form>
+    </div>
   </div>
 </section>

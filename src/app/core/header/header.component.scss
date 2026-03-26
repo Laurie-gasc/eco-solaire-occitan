@@ -53,3 +53,45 @@ margin: 4%;
     transform 0.3s ease,
     width 0.3s ease;
 }
+
+label, #toggle
+{
+    display: none;
+}
+ 
+@media all and (max-width: 991px)
+{
+  
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .nav-links 
+    {
+        display: none;
+        flex-direction: column;
+        background: #ffffff;
+        height: 400px;
+    }
+ 
+    nav .nav-links a {
+        width: 100%;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .nav-links {
+        display: flex;
+    }
+}

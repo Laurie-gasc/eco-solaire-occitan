@@ -2,10 +2,11 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding-top: 10px;
 }
 
 .service-card {
-  background-color: rgba(213, 243, 222, 0.414);
+  background-color: #1d5c283f;
   text-align: center;
   padding: 25px;
   border-radius: 12px;
