@@ -1,0 +1,35 @@
+.presentation-card {
+  position: relative;
+  z-index: 2;
+  background: #dbe9dc;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgb(36, 91, 38);
+}
+
+.image-overlap {
+  position: relative;
+  z-index: 1;
+  margin-left: -50px; /* chevauchement sur le texte */
+  margin-top: -100px;
+
+}
+
+.image-overlap img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Sur mobile, on retire le chevauchement */
+@media (max-width: 768px) {
+  .image-overlap {
+    margin-left: 0;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+h2 {
+    color: rgb(42, 89, 42);
+    margin-bottom: 25px;
+}
