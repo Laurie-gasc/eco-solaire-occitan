@@ -5,7 +5,7 @@
     <div class="row g-4">
       <!-- Colonne gauche : formulaire -->
       <div class="col">
-        <div class="card shadow p-3 mb-5 rounded h-100">
+        <div class="card shadow p-3 rounded h-100">
           <div class="card-body p-4">
             <h4 class="card-title mb-4 fw-semibold">Formulaire</h4>
 
@@ -69,10 +69,29 @@
                   Le message est requis.
                 </div>
               </div>
-
-              <div>
-                <button type="submit" class="buttons">Envoyer</button>
+              <!-- Message de succès -->
+              <div class="alert alert-success mt-3" *ngIf="sendSuccess">
+                Votre message a bien été envoyé ! Nous vous répondrons
+                rapidement.
               </div>
+
+              <!-- Message d'erreur -->
+              <div class="alert alert-danger mt-3" *ngIf="sendError">
+                Une erreur est survenue. Veuillez réessayer ou nous appeler
+                directement.
+              </div>
+
+              <!-- Bouton avec état de chargement -->
+<div>
+  <button type="submit" class="buttons" [disabled]="isLoading">
+    {{ isLoading ? 'Envoi en cours...' : 'Envoyer' }}
+  </button>
+  <p class="text-muted small mt-2">
+    En envoyant ce formulaire, vous acceptez que vos données soient utilisées
+    pour traiter votre demande, conformément à nos
+    <a href="#" data-bs-toggle="modal" data-bs-target="#legalModal">mentions légales</a>.
+  </p>
+</div>
             </form>
           </div>
         </div>

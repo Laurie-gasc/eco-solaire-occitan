@@ -32,16 +32,14 @@ html {
   scroll-behavior: smooth;
 }
 
-.bebas-neue-regular {
-  font-weight: 400;
-}
 
 body {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   min-height: 100vh;
-  background: url("assets/background.jpg") no-repeat center center fixed;
+  background-color: rgb(255, 255, 255);
   background-size: cover;
   margin: 0;
 }

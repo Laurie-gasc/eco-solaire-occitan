@@ -1,2 +1,33 @@
+
 <h2 class="section-title">AVIS</h2>
-<section class="home"></section>
+<section class="home">
+  <div class="container mt-5 pb-5">
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-12 col-md-6 col-lg-4" *ngFor="let avis of avisList">
+        <div class="avis-card h-100">
+          <div class="avis-header">
+            <div class="avis-avatar">{{ avis.initiales }}</div>
+            <div>
+              <p class="avis-nom">{{ avis.nom }}</p>
+              <div class="avis-etoiles">
+                <span *ngFor="let e of getEtoiles(avis.note)">★</span>
+                <span class="etoile-vide" *ngFor="let e of getEtoilesVides(avis.note)">★</span>
+              </div>
+            </div>
+          </div>
+          <p class="avis-texte">"{{ avis.texte }}"</p>
+          <p class="avis-date">{{ avis.date }}</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Message si pas encore d'avis -->
+    <div class="avis-empty" *ngIf="avisList.length === 0">
+      <p>Les avis de nos clients arrivent bientôt.</p>
+    </div>
+
+  </div>
+</section>

@@ -23,7 +23,7 @@
   color: #ffffff;
   text-align: center;
     padding: 4rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.182);
 }
 
@@ -36,6 +36,7 @@ h1 {
   color: #094720;
     text-shadow: 2px 2px 4px rgb(255, 255, 255);
   font-size: 5rem;
+  font-weight: bold;
   animation: slideInRight 0.8s ease-out forwards;
   margin: 0 0 0.5rem 0;
 }
@@ -44,12 +45,13 @@ h2 {
   color: #ffffff;
   font-size: 2rem;
   margin: 1rem;
+  font-weight: bold;
 }
 
 .button-wrapper {
   position: relative;
   text-align: center; 
-  padding-bottom: 5rem; 
+  padding-bottom: 2rem; 
 }
 
 @keyframes slideInRight {

@@ -1,6 +1,17 @@
 <footer class="footer">
-  <p>© 2026 Eco Solaire Occitan. Tous droits réservés.</p>
+  <p class="footer-copy">© 2026 Eco Solaire Occitan. Tous droits réservés.</p>
+
   <div class="social-links">
-    <a href="#" target="_blank">Mentions Légales</a>
+    <a data-bs-toggle="modal" data-bs-target="#legalModal" style="cursor: pointer">
+      Mentions légales
+    </a>
+    <app-legal-notice></app-legal-notice>
   </div>
+
+  <p class="footer-credits">
+    Icons made by
+    <a href="https://www.flaticon.com/authors/andika-syaif" target="_blank" rel="noopener">Andika Syaif</a>
+    from
+    <a href="https://www.flaticon.com" target="_blank" rel="noopener">Flaticon</a>
+  </p>
 </footer>

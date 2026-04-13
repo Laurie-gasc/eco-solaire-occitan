@@ -8,6 +8,7 @@ import { AvisComponent } from "./pages/avis/avis.component";
 import { ContactComponent } from "./pages/contact/contact.component";
 import { RealisationsComponent } from "./pages/realisations/realisations.component";
 import { PresentationComponent } from "./pages/presentation/presentation.component";
+import { LegalNoticeComponent } from "./legal-notice/legal-notice.component";
 
 @Component({
   selector: 'app-root',
@@ -20,11 +21,13 @@ import { PresentationComponent } from "./pages/presentation/presentation.compone
     AvisComponent,
     ContactComponent,
     RealisationsComponent,
-    PresentationComponent
+    PresentationComponent,
+
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'eco-solaire-occitan';
+  
 }
