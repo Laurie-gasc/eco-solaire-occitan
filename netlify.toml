@@ -1,0 +1,9 @@
+[build]
+  base = "eco-solaire-occitan"
+  command = "npm install && npm run build"
+  publish = "eco-solaire-occitan/dist/eco-solaire-occitan/browser"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
