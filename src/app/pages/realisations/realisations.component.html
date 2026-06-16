@@ -1,3 +1,14 @@
-<section class="home">
-<h2 class="section-title">REALISATIONS</h2>
+<section class="realisations-section">
+  <h2 class="section-title">REALISATIONS</h2>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let img of images">
+        <img [src]="img" alt="Réalisation">
+      </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
 </section>

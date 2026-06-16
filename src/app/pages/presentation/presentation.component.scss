@@ -1,6 +1,6 @@
 .presentation-card {
   position: relative;
-  z-index: 2;
+  z-index: 1; /* plus bas */
   background: #dbe9dc;
   padding: 2rem;
   border-radius: 4px;
@@ -9,10 +9,9 @@
 
 .image-overlap {
   position: relative;
-  z-index: 1;
-  margin-left: -50px; /* chevauchement sur le texte */
+  z-index: 2;
+  margin-left: -40px;
   margin-top: -100px;
-
 }
 
 .image-overlap img {
@@ -37,4 +36,24 @@ h2 {
 
 p {
   line-height: 1.5rem;
+}
+
+.photo-legend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.photo-legend a {
+  color: #666464;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.photo-legend a:hover {
+  color: #2e8b57; /* vert solaire */
+  text-decoration: underline;
 }

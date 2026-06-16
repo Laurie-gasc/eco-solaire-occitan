@@ -8,6 +8,7 @@ import {
 import { Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import emailjs from '@emailjs/browser';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -50,10 +51,10 @@ export class ContactComponent {
 
       emailjs
         .send(
-          'VOTRE_SERVICE_ID',   // 🔑 à remplacer
-          'VOTRE_TEMPLATE_ID',  // 🔑 à remplacer
+          environment.emailjs.serviceId,
+          environment.emailjs.templateId,
           templateParams,
-          'VOTRE_PUBLIC_KEY'    // 🔑 à remplacer
+          environment.emailjs.publicKey
         )
         .then(() => {
           this.sendSuccess = true;
