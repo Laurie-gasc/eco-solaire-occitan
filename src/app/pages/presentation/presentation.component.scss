@@ -10,8 +10,8 @@
 .image-overlap {
   position: relative;
   z-index: 2;
-  margin-left: -40px;
-  margin-top: -100px;
+  margin-left: -35px;
+  margin-top: -150px;
 }
 
 .image-overlap img {
@@ -42,9 +42,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 8px;
-  font-size: 0.85rem;
-  font-weight: 500;
+  padding: 5px 25px;
+  font-size: 0.8rem;
 }
 
 .photo-legend a {
@@ -54,6 +53,6 @@ p {
 }
 
 .photo-legend a:hover {
-  color: #2e8b57; /* vert solaire */
+  color: #2e8b57; 
   text-decoration: underline;
 }
