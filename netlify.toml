@@ -1,7 +1,7 @@
 [build]
   base = "eco-solaire-occitan"
   command = "npm install && npm run build -- --configuration production"
-  publish = "../dist/eco-solaire-occitan"
+  publish = "../dist/eco-solaire-occitan/browser"
 
 [[redirects]]
   from = "/*"
