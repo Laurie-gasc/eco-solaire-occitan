@@ -19,6 +19,8 @@ export class RealisationsComponent implements AfterViewInit {
     'assets/realisations/5.jpeg',
     'assets/realisations/6.jpeg',
     'assets/realisations/7.jpeg',
+    'assets/realisations/8.jpeg',
+    'assets/realisations/9.jpeg',
   ];
 
   ngAfterViewInit() {
